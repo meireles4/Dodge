@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\alexa\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-backend-android\1.9.6\57c2831c870743712b808384187ea856e541878f\gdx-backend-android-1.9.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="57c2831c870743712b808384187ea856e541878f">
+        <dex dex="D:\SaveTheWorld\android\build\intermediates\pre-dexed\debug\gdx-backend-android-1.9.6_ba7746278d7738d56836d2273f7bbf1714333745.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\alexa\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx\1.9.6\47d1e9b890e364ec28f128e9bb3b9a12a94c164\gdx-1.9.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="047d1e9b890e364ec28f128e9bb3b9a12a94c164">
+        <dex dex="D:\SaveTheWorld\android\build\intermediates\pre-dexed\debug\gdx-1.9.6_765707f8c3e2ab6eefa0c84dfcd855c3439490e6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\SaveTheWorld\core\build\libs\core-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c7a3c805164b5162ebd80dcd740aca1f256ee8df">
+        <dex dex="D:\SaveTheWorld\android\build\intermediates\pre-dexed\debug\core-1.0_e3e8ceb3afa56d6059b6a8489a8454a9bdb29e8f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\alexa\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-box2d\1.9.6\c249ef4060a4fada952f278455c8f7b9cba3c18a\gdx-box2d-1.9.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c249ef4060a4fada952f278455c8f7b9cba3c18a">
+        <dex dex="D:\SaveTheWorld\android\build\intermediates\pre-dexed\debug\gdx-box2d-1.9.6_ec086cec5582498ce076cdd5e2d3348925653abd.jar" />
+    </item>
+
+</items>
