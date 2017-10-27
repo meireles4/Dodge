@@ -4,12 +4,15 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.utils.Array;
 import com.savetheworld.game.SaveTheWorld;
 import com.savetheworld.game.sprites.Enemy;
 import com.savetheworld.game.sprites.Player;
+import com.sun.org.apache.xpath.internal.operations.String;
 
 public class PlayState extends State {
 
@@ -24,6 +27,7 @@ public class PlayState extends State {
     private float timeLeftToEnemySpawn = 1f;
 
     private int score;
+    private BitmapFont font24;
 
     public PlayState(GameStateManager gsm) {
         super(gsm);
@@ -36,6 +40,8 @@ public class PlayState extends State {
         timeAfterColision = 0;
         colided = false;
         score = 0;
+
+        initFonts();
 
     }
 
@@ -114,6 +120,7 @@ public class PlayState extends State {
 
     @Override
     public void render(SpriteBatch sb) {
+
         sb.setProjectionMatrix(cam.combined);
         sb.begin();
 
@@ -127,15 +134,29 @@ public class PlayState extends State {
         }
 
         sb.draw(player.getTexture(), player.getPosition().x, player.getPosition().y);
+        font24.draw(sb, Integer.toString(score), SaveTheWorld.WIDTH/2 - font24.getSpaceWidth() / 2, player.getPosition().y + SaveTheWorld.HEIGHT - font24.getLineHeight());
 
         sb.end();
+    }
+
+    private void initFonts(){
+        FreeTypeFontGenerator generator = new FreeTypeFontGenerator(Gdx.files.internal("fonts/GoodDog.otf"));
+        FreeTypeFontGenerator.FreeTypeFontParameter parameter = new FreeTypeFontGenerator.FreeTypeFontParameter();
+
+        parameter.size = 50;
+
+        font24 = generator.generateFont(parameter); // font size 24 pixels
+
     }
 
     @Override
     public void dispose() {
         bg.dispose();
         player.dispose();
+        font24.dispose();
 
         //System.out.println("Play State Disposed");
     }
+
+
 }

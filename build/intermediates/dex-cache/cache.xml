@@ -3,6 +3,15 @@
 
     <item
         is-multidex="false"
+        jar="C:\Users\alexa\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-freetype\1.9.6\69187cc3c8062f191df435b43671b0e5ffcbf353\gdx-freetype-1.9.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="69187cc3c8062f191df435b43671b0e5ffcbf353">
+        <dex dex="D:\SaveTheWorld\android\build\intermediates\pre-dexed\debug\gdx-freetype-1.9.6_ca8eeb09d61dae58ad7e8e4464d0a354e3583a08.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\alexa\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-backend-android\1.9.6\57c2831c870743712b808384187ea856e541878f\gdx-backend-android-1.9.6.jar"
         jumboMode="false"
         optimize="true"
@@ -25,7 +34,7 @@
         jumboMode="false"
         optimize="true"
         revision="26.0.1"
-        sha1="c7a3c805164b5162ebd80dcd740aca1f256ee8df">
+        sha1="e505c8ba2c2eff44ca38469957c18736ce9877e5">
         <dex dex="D:\SaveTheWorld\android\build\intermediates\pre-dexed\debug\core-1.0_e3e8ceb3afa56d6059b6a8489a8454a9bdb29e8f.jar" />
     </item>
     <item
